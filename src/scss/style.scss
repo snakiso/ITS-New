@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+@import '../scss/breakpoints';
+@import '../scss/vars';
+@import '../scss/layout';
+@import '../scss/wrapper';
+@import '../scss/animation';
+@import '../html/blocks/title/title';
+@import '../html/blocks/button/button';
+@import "../html/common/menu/menu";
+@import "../html/common/header/header";
+@import "../html/blocks/hamburgers/hamburgers";
+@import "../html/common/footer/footer";
+@import "../html/blocks/cards/cards";
+@import "../html/blocks/result/result";
+@import "../html/blocks/infinite-slider/infinite-slider";

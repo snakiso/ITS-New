@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap&_v=20230808180231"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230808180231" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230808180231"></script>
+    <script src="js/jQuery2.2.0.js?_v=20230808180231"></script>
+    <script src="js/ScrollAnimations.js?_v=20230808180231"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230808180231">
+    <title>Карточки</title>
+</head>
+
+<body class="body">
+    <header class="header">
+    <div class="header__wrapper wrapper flex">
+        <div class="header__logo">
+            <img src="img/logos/logo.png" alt="">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">О премии</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Условия участия</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Экспертный совет</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Контакты</a>
+                </li>
+                <li class="header__item header__item_dropdown">
+                    Итоги
+                    <img src="img/arrow-dropdown.svg" alt="">
+                    <div class="header__dropdown">
+                        <div class="header__dropdown-inner">
+                            <a class="header__link header__link_dropdown" href="#">2021</a>
+                            <a class="header__link" href="#">2022</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="button">Подать заявку</a>
+        </nav>
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+</header>
+    <div class="menu">
+  <div class="menu__wrapper wrapper flex">
+    <nav class="menu__nav">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О премии</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Условия участия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Экспертный совет</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+        <li class="menu__item menu__item_result">
+          Итоги
+          <a href="#" class="menu__link menu__link_result">2021</a>
+          <a href="#" class="menu__link menu__link_result">2022</a>
+        </li>
+        <a href="#" class="button">Подать заявку</a>
+      </ul>
+    </nav>
+    <div class="menu__contacts">
+      <a href="tel:+74957665165" class="menu__contacts-link menu__contacts-link_phone">+7 (495) 766-51-65</a>
+      <a href="mailto:info@itsjournal.ru" class="menu__contacts-link menu__contacts-link_mail">info@itsjournal.ru</a>
+    </div>
+  </div>
+</div>
+    <main class="main">
+            <div class="cards">
+  <div class="wrapper">
+    <span class="title">ЭКСПЕРТНЫЙ СОВЕТ</span>
+    <div class="cards__list">
+      <div class="cards__item">
+        <div class="cards__item-img cards__item-img_main">
+          <img src="img/cards/card-1.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Александр Сёмкин</span>
+          <p class="cards__item-info">Президент Ассоциации «Цифровая Эра Транспорта», председатель совета Кластера
+            ГЛОНАСС К-57</p>
+          <p class="cards__item-important">Председатель жюри Премии «ИТС России»</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-2.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Дмитрий Ольховиков</span>
+          <p class="cards__item-info">Главный редактор информационно-аналитической платформы «ИТС России»,
+            исполнительный директор Ассоциации «Цифровая Эра Транспорта», член Общественного совета федерального
+            партийного
+            проекта
+            «Безопасные дороги»</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-3.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Антон Журавлев</span>
+          <p class="cards__item-info">Заместитель директора
+            ФАУ «РОСДОРНИИ»</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-4.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Дмитрий Горшков</span>
+          <p class="cards__item-info">Директор ФГБУ «СИЦ Минтранса России»</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-5.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Михаил Блинкин</span>
+          <p class="cards__item-info">Российский эксперт в области организации транспортной среды и урбанистики,
+            кандидат технических наук, ординарный профессор НИУ «Высшая школа экономики», научный руководитель Института
+            экономики
+            транспорта
+            и транспортной политики НИУ ВШЭ</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-6.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Александр Виденёв</span>
+          <p class="cards__item-info">Вице-президент Ассоциации «Цифровая Эра Транспорта», руководитель «Сорб-Иннова»
+          </p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-7.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Дмитрий Рубцов</span>
+          <p class="cards__item-info">Директор проектов АО «ГЛОНАСС»</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-8.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Андрей Бодров</span>
+          <p class="cards__item-info">Эксперт в области интеллектуальных транспортных систем</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-9.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Татьяна Марканич</span>
+          <p class="cards__item-info">Проректор РУТ (МИИТ)</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-10.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">АЛЕКСЕЙ ХРИПУНОВ</span>
+          <p class="cards__item-info">Гендиректор НИЦ «Аэроскрипт»</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-11.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Ольга Федоткина</span>
+          <p class="cards__item-info">Исполнительный директор Национального союза экспертов в сфере тран</p>
+        </div>
+      </div>
+      <div class="cards__item">
+        <div class="cards__item-img">
+          <img src="img/cards/card-12.jpg" alt="">
+        </div>
+        <div class="cards__item-content">
+          <span class="cards__item-name">Алевтина Кириллова</span>
+          <p class="cards__item-info">Первый вице-президент Международной Ассоциации логистического бизнеса,
+            Председатель научно-технического совета Ассоциации «Цифровой транспорт
+            и логистика»</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer class="footer">
+  <div class="footer__wrapper wrapper">
+    <div class="footer__top-block grid">
+      <div class="footer__logos">
+        <img class="footer__logo" src="img/logos/its-3.svg" alt="">
+        <img class="footer__logo" src="img/logos/its-1.svg" alt="">
+        <img class="footer__logo" src="img/logos/its-2.svg" alt="">
+      </div>
+      <p class="footer__year">© 2021—2023 Интеллектуальные транспортные системы России.
+        Все права защищены.</p>
+    </div>
+    <div class="footer__bottom-block grid">
+      <div class="footer__contacts">
+        <a class="footer__link footer__link_phone" href="tel:+74957665165">+7 (495) 766-51-65</a>
+        <a class="footer__link footer__link_mail" href="mailto:info@itsjournal.ru">info@itsjournal.ru</a>
+        <a class="footer__link footer__link_politics" href="#">Политика конфиденциальности</a>
+      </div>
+      <a href="#" class="footer__link footer__link_developer">Разработка сайта: w4e</a>
+    </div>
+  </div>
+</footer>
+    <script src="./js/header.js?_v=20230808180231"></script>
+    <script src="./js/swiper.js?_v=20230808180231"></script>
+</body>
+
+</html>

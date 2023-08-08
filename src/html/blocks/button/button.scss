@@ -1,0 +1,24 @@
+.button {
+  background: none;
+  border: 1px solid $color-dark-blue;
+  color: $color-dark-blue;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-family: $ff-montserrat;
+  height: fit-content;
+  transition: ease-in .2s;
+  width: fit-content;
+  display: block;
+
+  @include desktop {
+    &:hover {
+      background-color: $color-dark-blue;
+      color: white;
+    }
+  }
+
+  @include non-desktop {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

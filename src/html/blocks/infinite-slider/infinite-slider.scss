@@ -1,0 +1,124 @@
+.infinite-slider {
+  position: relative;
+
+  &__title {
+    display: block;
+    font-family: $ff-lato;
+    font-weight: 600;
+    line-height: 1.18em;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+  }
+
+  &__slide {
+    max-width: 830px;
+    margin: 0 15px;
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+    margin-top: $offset-main;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 100%;
+      background-color: #E3E3E3;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    cursor: pointer;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__prev {
+    transform: rotate(180deg);
+  }
+
+  @include desktop {
+    margin-bottom: $offset-bigest;
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 60px;
+      padding-left: 80px;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 80px;
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: $offset-main;
+    }
+
+    &__slide {
+      max-width: calc(100% - 160px);
+      margin: 0 10px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 9px;
+      height: 20px;
+      background-image: url(../img/slider-mobile-arrow.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: 2px;
+    }
+
+    &::after {
+      right: 2px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: $offset-main;
+    }
+
+    &__slide {
+      max-width: calc(100% - 30px);
+      margin: 0 15px;
+    }
+
+    &__img {
+      aspect-ratio: 4/3;
+    }
+  }
+}

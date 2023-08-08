@@ -1,0 +1,16 @@
+.title {
+  font-family: $ff-lato;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-dark-blue;
+
+  @include desktop {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+  }
+
+  @include non-desktop {
+    font-size: 30px;
+    letter-spacing: 0.9px;
+  }
+}

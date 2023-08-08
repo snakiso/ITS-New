@@ -1,0 +1,45 @@
+//Цвета
+$color-dark-blue: #025098;
+$color-coral: #FF9898;
+$color-blue: #20C2FF;
+$color-opacity-blue:rgba(223, 237, 250, 0.70);
+$color-dark-grey: #DFDFDF;
+$color-light-grey: #E6E6E6;
+
+
+
+//Размеры шрифта
+$size-title: 48px;
+$size-subtitle: 28px;
+$size-h3: 20px;
+$size-text: 16px;
+$size-mobile-title: 30px;
+$size-mobile-subtitle: 22px;
+$size-mobile-text: 14px;
+
+
+//Семейства шрифтов
+$ff-lato: 'Lato', sans-serif;
+$ff-montserrat: 'Montserrat', sans-serif;
+
+//Отступы
+$offset-bigest: 100px;
+$offset-big: 60px;
+$offset-middle: 40px;
+$offset-main: 30px;
+$offset-secondary: 20px;
+
+
+
+//Сетка
+
+$grid-gutter: 30px;
+$grid-col: 78px;
+$grid-item: calc($grid-col + $grid-gutter);
+
+
+//Контейнер
+
+$container: calc(($grid-gutter * 13) + ($grid-col * 12))
+
+

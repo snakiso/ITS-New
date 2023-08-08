@@ -1,0 +1,143 @@
+.footer {
+  background-color: $color-light-grey;
+
+  &__wrapper {
+    padding-top: $offset-main;
+    padding-bottom: $offset-main;
+  }
+
+  &__logos {
+    display: flex;
+    column-gap: $offset-big;
+    row-gap: $offset-secondary;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.28em;
+
+    &_politics {
+      text-decoration: underline;
+    }
+
+    &_phone,
+    &_mail {
+      padding-left: 32px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+      }
+    }
+
+    &_phone::before {
+      background-image: url(../img/footer/footer-phone.svg);
+      width: 20px;
+      height: 20px;
+    }
+
+    &_mail::before {
+      background-image: url(../img/footer/footer-mail.svg);
+      width: 21px;
+      height: 16px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    column-gap: $offset-middle;
+  }
+
+  @include desktop {
+    &__top-block {
+      margin-bottom: $offset-main;
+    }
+
+    &__contacts {
+      display: flex;
+      column-gap: $offset-middle;
+      grid-column: 7 span;
+    }
+
+
+    &__logos {
+      display: flex;
+      column-gap: $offset-big;
+      grid-column: 7 span;
+    }
+
+    &__year {
+      font-size: 14px;
+      color: #000;
+      line-height: 1.28em;
+      grid-column: 10/3 span;
+    }
+
+    &__link {
+      &_developer {
+        grid-column: 10/3 span;
+      }
+    }
+  }
+
+
+  @include non-desktop {
+    &__top-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+      margin-bottom: $offset-secondary;
+    }
+
+    &__bottom-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__logos {
+      justify-content: center;
+    }
+
+    &__contacts {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__year {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 13px;
+
+      &_phone {
+        margin-bottom: 10px;
+      }
+
+      &_mail {
+        margin-bottom: $offset-secondary;
+      }
+
+      &_politics {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+}
