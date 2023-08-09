@@ -1,0 +1,85 @@
+.error {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    display: block;
+    color: #F45F66;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    display: block;
+    color: #000;
+    font-weight: 400;
+  }
+
+  &__text {
+    position: relative;
+    color: #000;
+    font-weight: 400;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      background-color: #E6E6E6;
+    }
+  }
+
+  &__button {
+    margin: 30px auto 0 auto;
+  }
+
+  @include desktop {
+    &__title {
+      font-size: 200px;
+      line-height: 1.15em;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      padding-bottom: 110px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 1.22em;
+
+      &::before {
+        width: 700px;
+        top: -50px;
+        left: -25%;
+      }
+    }
+
+  }
+
+  @include non-desktop {
+    &__title {
+      font-size: 120px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      padding-bottom: 60px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.28em;
+
+      &::before {
+        width: 330px;
+        top: -30px;
+        left: -5%;
+      }
+    }
+  }
+}

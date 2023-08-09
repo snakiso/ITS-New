@@ -1,3 +1,5 @@
+@import '../scss/breakpoints';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,11 +26,27 @@ a {
 .main {
   position: relative;
   overflow: hidden;
+
+  @include desktop {
+    background-image: url(../img/main/bg.png);
+    background-position: center top;
+  }
+
+  @include tablet {
+    background-image: url(../img/main/bg.png);
+    background-size: auto;
+  }
+
+  @include mobile {
+    background-image: url(../img/main/mobile-bg.png);
+    background-position: center top;
+    background-size: cover;
+  }
 }
 
 
 
-@import '../scss/breakpoints';
+
 @import '../scss/vars';
 @import '../scss/layout';
 @import '../scss/wrapper';
@@ -42,3 +60,9 @@ a {
 @import "../html/blocks/cards/cards";
 @import "../html/blocks/result/result";
 @import "../html/blocks/infinite-slider/infinite-slider";
+@import "../html/blocks/about/about";
+@import "../html/blocks/quote/quote";
+@import "../html/blocks/jury/jury";
+@import "../html/blocks/conditions/conditions";
+@import "../html/blocks/contacts/contacts";
+@import "../html/blocks/404/404";

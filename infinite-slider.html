@@ -1,149 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru" class="html">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap&_v=20230808180231"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230808180231" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230808180231"></script>
-    <script src="js/jQuery2.2.0.js?_v=20230808180231"></script>
-    <script src="js/ScrollAnimations.js?_v=20230808180231"></script>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230808180231">
-    <title>Слайдер</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap&_v=20230809174911"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230809174911" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230809174911"></script>
+  <script src="js/jQuery2.2.0.js?_v=20230809174911"></script>
+  <script src="js/ScrollAnimations.js?_v=20230809174911"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20230809174911">
+  <title>Слайдер</title>
 </head>
 
 <body class="body">
+  <div class="page">
     <header class="header">
-    <div class="header__wrapper wrapper flex">
+      <div class="header__wrapper wrapper flex">
         <div class="header__logo">
-            <img src="img/logos/logo.png" alt="">
+          <a href="#"><img src="img/logos/logo.png" alt=""></a>
         </div>
         <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="header__link">О премии</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Условия участия</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Экспертный совет</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Контакты</a>
-                </li>
-                <li class="header__item header__item_dropdown">
-                    Итоги
-                    <img src="img/arrow-dropdown.svg" alt="">
-                    <div class="header__dropdown">
-                        <div class="header__dropdown-inner">
-                            <a class="header__link header__link_dropdown" href="#">2021</a>
-                            <a class="header__link" href="#">2022</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <a href="#" class="button">Подать заявку</a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">О премии</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Условия участия</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Экспертный совет</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
+            <li class="header__item header__item_dropdown">
+              Итоги
+              <img src="img/arrow-dropdown.svg" alt="">
+              <div class="header__dropdown">
+                <div class="header__dropdown-inner">
+                  <a class="header__link header__link_dropdown" href="#">2021</a>
+                  <a class="header__link" href="#">2022</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="button">Подать заявку</a>
         </nav>
         <button class="hamburger hamburger--squeeze" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
-    </div>
-</header>
+      </div>
+    </header>
     <div class="menu">
-  <div class="menu__wrapper wrapper flex">
-    <nav class="menu__nav">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="#" class="menu__link">О премии</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Условия участия</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Экспертный совет</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Контакты</a>
-        </li>
-        <li class="menu__item menu__item_result">
-          Итоги
-          <a href="#" class="menu__link menu__link_result">2021</a>
-          <a href="#" class="menu__link menu__link_result">2022</a>
-        </li>
-        <a href="#" class="button">Подать заявку</a>
-      </ul>
-    </nav>
-    <div class="menu__contacts">
-      <a href="tel:+74957665165" class="menu__contacts-link menu__contacts-link_phone">+7 (495) 766-51-65</a>
-      <a href="mailto:info@itsjournal.ru" class="menu__contacts-link menu__contacts-link_mail">info@itsjournal.ru</a>
+      <div class="menu__wrapper wrapper flex">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О премии</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Условия участия</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Экспертный совет</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+            <li class="menu__item menu__item_result">
+              Итоги
+              <a href="#" class="menu__link menu__link_result">2021</a>
+              <a href="#" class="menu__link menu__link_result">2022</a>
+            </li>
+            <a href="#" class="button">Подать заявку</a>
+          </ul>
+        </nav>
+        <div class="menu__contacts">
+          <a href="tel:+74957665165" class="menu__contacts-link menu__contacts-link_phone">+7 (495) 766-51-65</a>
+          <a href="mailto:info@itsjournal.ru"
+            class="menu__contacts-link menu__contacts-link_mail">info@itsjournal.ru</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
     <main class="main">
-        <div class="infinite-slider">
-  <div class="wrapper">
-    <span class="infinite-slider__title">Фотогалерея</span>
-  </div>
-  <div class="swiper-wrapper">
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-    <div class="swiper-slide infinite-slider__slide">
-      <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
-    </div>
-  </div>
-  <div class="infinite-slider__nav">
-    <div class="infinite-slider__next"><img src="img/slider-arrow.svg" alt=""></div>
-    <div class="infinite-slider__prev"><img src="img/slider-arrow.svg" alt=""></div>
-  </div>
-</div>
+      <div class="infinite-slider">
+        <div class="wrapper">
+          <span class="infinite-slider__title">Фотогалерея</span>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+          <div class="swiper-slide infinite-slider__slide">
+            <img class="infinite-slider__img" src="img/infinite-slider/slide.jpg" alt="">
+          </div>
+        </div>
+        <div class="infinite-slider__nav">
+          <div class="infinite-slider__next"><img src="img/slider-arrow.svg" alt=""></div>
+          <div class="infinite-slider__prev"><img src="img/slider-arrow.svg" alt=""></div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-  <div class="footer__wrapper wrapper">
-    <div class="footer__top-block grid">
-      <div class="footer__logos">
-        <img class="footer__logo" src="img/logos/its-3.svg" alt="">
-        <img class="footer__logo" src="img/logos/its-1.svg" alt="">
-        <img class="footer__logo" src="img/logos/its-2.svg" alt="">
+      <div class="footer__wrapper wrapper">
+        <div class="footer__top-block grid">
+          <div class="footer__logos">
+            <img class="footer__logo" src="img/logos/its-3.svg" alt="">
+            <img class="footer__logo" src="img/logos/its-1.svg" alt="">
+            <img class="footer__logo" src="img/logos/its-2.svg" alt="">
+          </div>
+          <p class="footer__year">© 2021—2023 Интеллектуальные транспортные системы России.
+            Все права защищены.</p>
+        </div>
+        <div class="footer__bottom-block grid">
+          <div class="footer__contacts">
+            <a class="footer__link footer__link_phone" href="tel:+74957665165">+7 (495) 766-51-65</a>
+            <a class="footer__link footer__link_mail" href="mailto:info@itsjournal.ru">info@itsjournal.ru</a>
+            <a class="footer__link footer__link_politics" href="#">Политика конфиденциальности</a>
+          </div>
+          <a href="#" class="footer__link footer__link_developer">Разработка сайта: w4e</a>
+        </div>
       </div>
-      <p class="footer__year">© 2021—2023 Интеллектуальные транспортные системы России.
-        Все права защищены.</p>
-    </div>
-    <div class="footer__bottom-block grid">
-      <div class="footer__contacts">
-        <a class="footer__link footer__link_phone" href="tel:+74957665165">+7 (495) 766-51-65</a>
-        <a class="footer__link footer__link_mail" href="mailto:info@itsjournal.ru">info@itsjournal.ru</a>
-        <a class="footer__link footer__link_politics" href="#">Политика конфиденциальности</a>
-      </div>
-      <a href="#" class="footer__link footer__link_developer">Разработка сайта: w4e</a>
-    </div>
+    </footer>
   </div>
-</footer>
-    <script src="./js/header.js?_v=20230808180231"></script>
-    <script src="./js/swiper.js?_v=20230808180231"></script>
+  <script src="./js/header.js?_v=20230809174911"></script>
+  <script src="./js/swiper.js?_v=20230809174911"></script>
 </body>
 
 </html>

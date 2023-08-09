@@ -1,0 +1,51 @@
+.jury {
+  margin-bottom: $offset-bigest;
+
+  &__title {
+    font-family: $ff-lato;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+  }
+
+  &__text {
+    color: #000;
+    font-weight: 400;
+  }
+
+  @include desktop {
+    &__inner {
+      grid-column: 10 span;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 1.14em;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.25em;
+      margin-bottom: $offset-main;
+    }
+  }
+
+  @include non-desktop {
+    &__inner {
+      grid-column: 12 span;
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 1.18em;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.28em;
+      margin-bottom: $offset-main;
+    }
+  }
+}

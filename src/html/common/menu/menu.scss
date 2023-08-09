@@ -6,8 +6,8 @@
   @include non-desktop {
     z-index: 10;
     position: fixed;
-    top: 64px;
-    min-height: calc(100vh - 64px);
+    top: 81px;
+    min-height: calc(100vh - 81px);
     background-color: white;
     width: 100%;
     left: -100%;
@@ -18,10 +18,10 @@
     }
 
     &__wrapper {
-      padding-top: 5px;
+      padding-top: 15px;
       flex-direction: column;
       justify-content: space-between;
-      min-height: calc(100vh - 64px);
+      min-height: calc(100vh - 81px);
     }
 
     &__item {

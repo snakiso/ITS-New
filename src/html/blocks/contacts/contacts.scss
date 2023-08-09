@@ -1,0 +1,167 @@
+.contacts {
+  background-color: $color-opacity-blue;
+
+  &__title {
+    display: block;
+    font-family: $ff-lato;
+    font-weight: 600;
+    color: $color-dark-blue;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    display: block;
+    color: #000;
+    font-weight: 600;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    &_margin {
+      margin-bottom: $offset-middle;
+    }
+
+
+  }
+
+  &__line {
+    display: flex;
+
+    &_center {
+      align-items: center;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding-left: 30px;
+    color: #000;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &_phone::before {
+      background-image: url(../img/contacts/contacts-phone.svg);
+    }
+
+    &_mail::before {
+      background-image: url(../img/contacts/contacts-mail.svg);
+    }
+  }
+
+  @include desktop {
+    margin-bottom: 100px;
+
+    &__wrapper {
+      padding-top: $offset-big;
+      padding-bottom: $offset-big;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 1.14em;
+      margin-bottom: $offset-main;
+    }
+
+    &__left-block {
+      grid-column: 5 span;
+    }
+
+    &__right-block {
+      grid-column: 7/6 span;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 1.25em;
+
+      &_phone::before {
+        width: 20px;
+        height: 20px;
+      }
+
+      &_mail::before {
+        width: 20px;
+        height: 16px;
+        top: 2px;
+      }
+    }
+
+    &__line {
+      column-gap: $offset-main;
+    }
+  }
+
+  @include non-desktop {
+    margin-bottom: 50px;
+
+    &__wrapper {
+      padding-top: $offset-main;
+      padding-bottom: $offset-main;
+
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 1.18em;
+      margin-bottom: $offset-main;
+    }
+
+    &__content {
+      row-gap: $offset-main;
+    }
+
+    &__left-block {
+      grid-column: 12 span;
+    }
+
+    &__right-block {
+      grid-column: 12 span;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 1.28em;
+
+      &_phone::before {
+        width: 17px;
+        height: 17px;
+      }
+
+      &_mail::before {
+        width: 17px;
+        height: 17px;
+        top: 2px;
+      }
+    }
+
+    &__line {
+      column-gap: 10px;
+    }
+  }
+
+  @include mobile {
+    &__line {
+      &_column {
+        flex-direction: column;
+        row-gap: 15px;
+      }
+    }
+  }
+}

@@ -5,12 +5,14 @@
 })
 
 <body class="body">
-    @@include('html/common/header/header.html',{})
-    @@include('html/common/menu/menu.html',{})
-    <main class="main">
-        @@include('html/blocks/infinite-slider/infinite-slider.html',{})
-    </main>
-    @@include('html/common/footer/footer.html',{})
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            @@include('html/blocks/infinite-slider/infinite-slider.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
     <script src="./js/header.js"></script>
     <script src="./js/swiper.js"></script>
 </body>

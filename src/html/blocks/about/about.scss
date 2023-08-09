@@ -1,0 +1,168 @@
+.about {
+  padding-top: 165px;
+  margin-bottom: 80px;
+
+  &__main {
+    background-color: $color-opacity-blue;
+  }
+
+  &__main-inner {
+    position: relative;
+  }
+
+  &__main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    position: absolute;
+  }
+
+  &__main-top {
+    display: flex;
+  }
+
+  &__main-year {
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: $ff-lato;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-dark-blue;
+  }
+
+  &__text {
+    color: #000;
+    line-height: 1.25em;
+
+    span {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    &__main {
+      margin-bottom: 80px;
+    }
+
+    &__main-inner {
+      position: relative;
+      padding: $offset-big $offset-main;
+    }
+
+    &__main-content {
+      grid-column: 7 span;
+      display: flex;
+      flex-direction: column;
+      row-gap: $offset-middle;
+    }
+
+    &__title {
+      left: 30px;
+      top: -30px;
+    }
+
+    &__main-year {
+      font-size: 18px;
+    }
+
+    &__main-emblem {
+      position: relative;
+      grid-column: 4 span;
+    }
+
+    &__main-emblem-img {
+      position: absolute;
+      bottom: -45px;
+      width: 100%;
+    }
+
+    &__block {
+      grid-column: 10 span;
+
+      &:not(:last-child) {
+        margin-bottom: $offset-big;
+      }
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      line-height: 1.14em;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.25em;
+    }
+  }
+
+  @include non-desktop {
+    &__main {
+      margin-bottom: 50px;
+    }
+
+    &__main-inner {
+      display: flex;
+      position: relative;
+      padding: 45px 15px 0 15px;
+      flex-direction: column;
+      row-gap: $offset-main;
+      align-items: center;
+    }
+
+    &__main-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    &__main-top {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    &__title {
+      left: 15px;
+      top: -20px;
+    }
+
+    &__main-year {
+      font-size: 18px;
+    }
+
+    &__main-emblem {
+      position: relative;
+      grid-column: 4 span;
+    }
+
+    &__main-emblem-img {
+      margin-left: 10px;
+      max-width: 170px;
+    }
+
+    &__block {
+      grid-column: 10 span;
+
+      &:not(:last-child) {
+        margin-bottom: $offset-main;
+      }
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 1.18em;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 1.28em;
+    }
+  }
+}
