@@ -27,20 +27,41 @@ a {
   position: relative;
   overflow: hidden;
 
+  @include big-desktop {
+    &_own {
+      background-image: url(../img/main/main-bg.png);
+      background-size: cover;
+    }
+  }
+
   @include desktop {
     background-image: url(../img/main/bg.png);
     background-position: center top;
+
+    &_own {
+      background-image: url(../img/main/main-bg.png);
+    }
   }
 
   @include tablet {
     background-image: url(../img/main/bg.png);
     background-size: auto;
+
+    &_own {
+      background-image: url(../img/main/main-bg-mobile.png);
+      background-size: cover;
+    }
   }
 
   @include mobile {
     background-image: url(../img/main/mobile-bg.png);
     background-position: center top;
     background-size: cover;
+
+    &_own {
+      background-image: url(../img/main/main-bg-mobile.png);
+      background-size: cover;
+    }
   }
 }
 
@@ -66,3 +87,7 @@ a {
 @import "../html/blocks/conditions/conditions";
 @import "../html/blocks/contacts/contacts";
 @import "../html/blocks/404/404";
+@import "../scss/input";
+@import "../scss/checkbox";
+@import "../html/blocks/form/form";
+@import "../html/blocks/own/own";

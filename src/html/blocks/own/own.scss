@@ -1,0 +1,189 @@
+.own {
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  &__logo-link {
+    display: block;
+    text-align: center;
+    margin-bottom: $offset-big;
+  }
+
+  &__subtitle {
+    color: #000;
+    font-family: $ff-lato;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__date-block {
+    display: flex;
+  }
+
+  &__date {
+    position: relative;
+    color: #F39195;
+    font-family: $ff-lato;
+    font-weight: 600;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: #F39195;
+      height: 1px;
+    }
+  }
+
+  &__year {
+    font-family: $ff-lato;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px rgba(179, 179, 179, 1);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 600;
+    color: $color-dark-blue;
+  }
+
+  @include desktop {
+    min-height: calc(100vh - 162px);
+
+    &__wrapper {
+      padding: $offset-main;
+      padding-bottom: $offset-big;
+    }
+
+    &__logo-link {
+      margin-bottom: $offset-big;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 15px;
+    }
+
+    &__date-block {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__date {
+      font-size: 18px;
+
+      &::before {
+        top: -10px;
+        width: 400px;
+        left: -100px;
+      }
+
+      &::after {
+        bottom: -10px;
+        width: 350px;
+        left: -130px;
+      }
+    }
+
+    &__year {
+      font-size: 220px;
+      letter-spacing: 6.6px;
+      line-height: 104%;
+      padding-right: 90px;
+    }
+
+    &__nav {
+      margin-top: $offset-middle;
+    }
+
+    &__list {
+      column-gap: $offset-middle;
+    }
+
+
+  }
+
+  @include non-desktop {
+    min-height: calc(100vh - 260px);
+
+    &__wrapper {
+      padding: $offset-secondary;
+      padding-bottom: 90px;
+    }
+
+    &__logo-link {
+      margin-bottom: 50px;
+    }
+
+    &__logo {
+      max-width: 170px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 26px;
+    }
+
+    &__subtitle {
+      font-size: 13px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    &__date-block {
+      margin-top: $offset-big;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+    }
+
+    &__date {
+      font-size: 16px;
+
+      &::before {
+        top: -10px;
+        width: 330px;
+        left: -130px;
+      }
+
+      &::after {
+        bottom: -10px;
+        width: 260px;
+        left: -130px;
+      }
+    }
+
+    &__year {
+      font-size: 130px;
+      letter-spacing: 3.9px;
+
+    }
+
+    &__nav {
+      margin-top: 50px;
+    }
+
+    &__list {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}

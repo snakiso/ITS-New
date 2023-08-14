@@ -1,0 +1,90 @@
+.label {
+  color: $color-dark-blue;
+  font-weight: 400;
+  font-family: $ff-montserrat;
+
+  span {
+    color: #8F8F8F;
+  }
+}
+
+.input {
+  height: 40px;
+  border-radius: 1px;
+  border: 1px solid $color-dark-grey;
+  padding: 10px 16px;
+  color: #000;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25em;
+
+  &_big {
+    height: 120px;
+    resize: none;
+  }
+}
+
+.input-photo {
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 1050px;
+  height: 130px;
+  cursor: pointer;
+}
+
+@include desktop {
+  .label {
+    font-size: 16px;
+    line-height: 1.25em;
+
+    span {
+      color: #8F8F8F;
+      margin-left: 8px;
+    }
+
+    &_column {
+      span {
+        display: block;
+        margin-top: 8px;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .input {
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.25em;
+
+    &_big {
+      height: 120px;
+      resize: none;
+    }
+  }
+}
+
+@include non-desktop {
+  .label {
+    font-size: 14px;
+    line-height: 1.28em;
+
+    span {
+      display: block;
+      color: #8F8F8F;
+    }
+  }
+
+  .input {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 1.28em;
+
+    &_big {
+      height: 140px;
+      resize: none;
+    }
+  }
+}

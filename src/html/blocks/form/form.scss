@@ -1,0 +1,380 @@
+.form {
+  background: rgba(255, 255, 255, 0.53);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
+  max-width: 1110px;
+
+  &__title {
+    color: $color-dark-blue;
+    font-family: $ff-lato;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contact-block {
+    padding: $offset-secondary 0;
+  }
+
+  &__contact-block-title {
+    display: block;
+    color: #000;
+    font-family: $ff-lato;
+    font-weight: 600;
+  }
+
+  &__contact-block-inputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__contact-block-checkboxes {
+    position: relative;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+  }
+
+  &__checkbox-box {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+  }
+
+  &__presentation-block {
+    position: relative;
+  }
+
+  &__presentation {
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  &__presentation-custom {
+    border-radius: 1px;
+    border: 2px dashed #DFDFDF;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__presentation-custom-add,
+  &__presentation-custom-remove {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__presentation-custom-remove {
+    display: none;
+    position: relative;
+    z-index: 20;
+  }
+
+  &__presentation-custom-remove-img {
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  &__photo-block-inner {
+    display: flex;
+  }
+
+  &__photo-box {
+    position: relative;
+    border: 2px dashed #DFDFDF;
+    flex: 1;
+  }
+
+  &__photo-box-download {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__photo-box-img {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+  }
+
+  &__photo-box-info {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    background: rgba(0, 0, 0, 0.46);
+  }
+
+  &__photo-box-info-inner {
+    padding: 2px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__photo-box-info-name {
+    font-size: 12px;
+    color: white;
+  }
+
+  &__photo-box-img-remove {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      top: 50%;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__accept-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__accept-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__accept-text {
+    color: #000;
+    font-weight: 400;
+  }
+
+  &__send-block {
+    display: flex;
+  }
+
+  &__data-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop {
+
+    margin: 80px auto 100px auto;
+
+    &__inner {
+      padding: $offset-middle $offset-main;
+    }
+
+    &__title {
+      font-size: 48px;
+      letter-spacing: 1.44px;
+    }
+
+    &__main {
+      margin-top: $offset-middle;
+      margin-bottom: $offset-big;
+      row-gap: 30px;
+    }
+
+    &__input-box {
+      row-gap: 15px;
+    }
+
+    &__contact-block-title {
+      margin-bottom: $offset-main;
+      font-size: 16px;
+      line-height: 1.25em;
+    }
+
+    &__contact-block-inner {
+      display: flex;
+      column-gap: 100px;
+    }
+
+    &__contact-block-inputs {
+      max-width: 510px;
+      row-gap: 30px;
+    }
+
+    &__contact-block-checkboxes {
+      padding-top: 35px;
+    }
+
+    &__photo-block-inner {
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    &__photo-box {
+      max-width: 186px;
+      min-height: 130px;
+    }
+
+    &__photo-box-download {
+      max-width: 40px;
+    }
+
+    &__bottom {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__accept-block {
+      row-gap: $offset-secondary;
+    }
+
+    &__accept-text {
+      font-size: 14px;
+      line-height: 1.28em;
+    }
+
+    &__send-block {
+      column-gap: $offset-main;
+      align-items: center;
+    }
+
+    &__data-block {
+      row-gap: $offset-main;
+    }
+  }
+
+
+  @include non-desktop {
+
+    margin: 30px auto 50px auto;
+
+    &__inner {
+      padding: $offset-main 15px;
+    }
+
+    &__title {
+      font-size: 30px;
+      letter-spacing: 0.9px;
+    }
+
+    &__main {
+      margin-top: $offset-main;
+      margin-bottom: $offset-main;
+      row-gap: $offset-secondary;
+    }
+
+    &__input-box {
+      row-gap: 12px;
+    }
+
+    &__contact-block-title {
+      margin-bottom: $offset-secondary;
+      font-size: 14px;
+      line-height: 1.28em;
+    }
+
+    &__data-block {
+      row-gap: $offset-secondary;
+    }
+
+    &__photo-block {
+      order: 1;
+    }
+
+    &__comment {
+      order: 2;
+    }
+
+    &__presentation-block {
+      order: 3;
+    }
+
+    &__contact-block-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: $offset-secondary;
+    }
+
+    &__contact-block-inputs {
+      max-width: 100%;
+      row-gap: 20px;
+    }
+
+    &__photo-block-inner {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-top: 15px;
+    }
+
+    &__photo-box {
+      min-width: 160px;
+      max-width: 160px;
+      min-height: 115px;
+    }
+
+    &__photo-box-download {
+      max-width: 35px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+      row-gap: $offset-secondary;
+    }
+
+    &__accept-block {
+      row-gap: $offset-secondary;
+    }
+
+    &__accept-text {
+      font-size: 13px;
+      line-height: 1.28em;
+    }
+
+    &__send-block {
+      flex-direction: column;
+      row-gap: $offset-secondary;
+      align-items: center;
+    }
+  }
+
+
+
+
+}

@@ -38,3 +38,10 @@ $screen-lg-max: 1920px;
     @content;
   }
 }
+
+// Large devices
+@mixin big-desktop {
+  @media (min-width: #{$screen-lg-max}) {
+    @content;
+  }
+}

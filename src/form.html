@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "О премии"
+})
+
+<body class="body">
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            @@include('html/blocks/form/form.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+    <script src="./js/header.js"></script>
+    <script src="./js/cleave.min.js"></script>
+    <script src="./js/phoneformatter.js"></script>
+    <script src="./js/form-presentation.js"></script>
+    <script src="./js/form-photo.js"></script>
+</body>
+
+</html>

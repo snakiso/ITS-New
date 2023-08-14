@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap&_v=20230814082836"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230814082836" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230814082836"></script>
+    <script src="js/jQuery2.2.0.js?_v=20230814082836"></script>
+    <script src="js/ScrollAnimations.js?_v=20230814082836"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230814082836">
+    <title>О премии</title>
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+    <div class="header__wrapper wrapper flex">
+        <div class="header__logo">
+            <a href="#"><img src="img/logos/logo.png" alt=""></a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">О премии</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Условия участия</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Экспертный совет</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Контакты</a>
+                </li>
+                <li class="header__item header__item_dropdown">
+                    Итоги
+                    <img src="img/arrow-dropdown.svg" alt="">
+                    <div class="header__dropdown">
+                        <div class="header__dropdown-inner">
+                            <a class="header__link header__link_dropdown" href="#">2021</a>
+                            <a class="header__link" href="#">2022</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="button">Подать заявку</a>
+        </nav>
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+</header>
+        <div class="menu">
+  <div class="menu__wrapper wrapper flex">
+    <nav class="menu__nav">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О премии</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Условия участия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Экспертный совет</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+        <li class="menu__item menu__item_result">
+          Итоги
+          <a href="#" class="menu__link menu__link_result">2021</a>
+          <a href="#" class="menu__link menu__link_result">2022</a>
+        </li>
+        <a href="#" class="button">Подать заявку</a>
+      </ul>
+    </nav>
+    <div class="menu__contacts">
+      <a href="tel:+74957665165" class="menu__contacts-link menu__contacts-link_phone">+7 (495) 766-51-65</a>
+      <a href="mailto:info@itsjournal.ru" class="menu__contacts-link menu__contacts-link_mail">info@itsjournal.ru</a>
+    </div>
+  </div>
+</div>
+        <main class="main">
+            <script src="https://www.google.com/recaptcha/api.js?_v=20230814082836" async defer></script>
+            <form action="" method="post" class="form">
+    <div class="form__inner">
+        <h3 class="form__title">Заявка на соискание премии</h3>
+        <div class="form__main">
+            <div class="form__input-box">
+                <label class="label" for="name">Название компании-соискателя Премии <span> (юридическое
+                        название)</span></label>
+                <input class="input" type="text" id="name" name="name" required />
+            </div>
+            <div class="form__input-box">
+                <label class="label" for="site">Сайт компании-соискателя Премии</label>
+                <input class="input" type="text" id="site" name="site" />
+            </div>
+            <div class="form__input-box">
+                <label class="label" for="discription">Краткое описание компании-соискателя Премии <span> (до 350
+                        знаков)</span></label>
+                <textarea class="input input_big" name="discription" id="discription" maxlength="350"
+                    required></textarea>
+            </div>
+            <div class="form__input-box">
+                <label class="label" for="person">Контактное лицо компании-соискателя Премии <span>(ФИО,
+                        должность)</span></label>
+                <input class="input" type="text" id="person" name="person" required />
+            </div>
+            <div class="form__contact-block">
+                <span class="form__contact-block-title">Контактные данные для связи</span>
+                <div class="form__contact-block-inner">
+                    <div class="form__contact-block-inputs">
+                        <div class="form__input-box">
+                            <label class="label" for="work-tel">Рабочий телефон</label>
+                            <input class="input" type="tel" id="work-tel" name="work-tel" required />
+                        </div>
+                        <div class="form__input-box">
+                            <label class="label" for="tel">Мобильный телефон</label>
+                            <input class="input" type="text" id="tel" name="tel" data-length='11' required />
+                        </div>
+                        <div class="form__input-box">
+                            <label class="label" for="mail">Email</label>
+                            <input class="input" type="text" id="mail" name="mail" required />
+                        </div>
+                    </div>
+                    <div class="form__contact-block-checkboxes">
+                        <div class="form__checkbox-box">
+                            <input class="checkbox" type="checkbox" name="telegram" id="telegram">
+                            <div class="custom-checkbox"></div>
+                            <span>Тelegram</span>
+                        </div>
+                        <div class="form__checkbox-box">
+                            <input class="checkbox" type="checkbox" name="whatsapp" id="whatsapp">
+                            <div class="custom-checkbox"></div>
+                            <span>WhatsApp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__data-block">
+                <div class="form__presentation-block">
+                    <label class="label label_column" for="presentation">Презентация проекта по параметрам, описанным в
+                        правилах
+                        подачи заявки на
+                        участие <span>(описание сути проекта; технологическая независимость проекта; возможности
+                            масштабирования проекта; эффекты
+                            от реализации или создания проекта) (формат pdf)</span></label>
+                    <input type="file" class="form__presentation" id="presentation" name="presentation"
+                        accept="application/pdf" required />
+                    <div class="form__presentation-custom">
+                        <div class="form__presentation-custom-add">
+                            <img src="img/plus.svg" alt="">
+                            <span>Добавить файл</span>
+                        </div>
+                        <div class="form__presentation-custom-remove">
+                            <span class="form__presentation-custom-remove-text"></span>
+                            <img class="form__presentation-custom-remove-img" src="img/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form__input-box form__comment">
+                    <label class="label" for="comments">Комментарии к проекту<span> (ссылки на ролики, публикации,
+                            статьи и
+                            др.)</span></label>
+                    <textarea class="input input_big" name="comments" id="comments" maxlength="350"></textarea>
+                </div>
+                <div class="form__photo-block">
+                    <label class="label label_column" for="photo">Фото проекта</label>
+                    <div class="form__photo-block-inner">
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__bottom">
+            <div class="form__accept-block">
+                <div class="form__accept-line">
+                    <input class="checkbox" type="checkbox" name="accept" id="" required>
+                    <div class="custom-checkbox"></div>
+                    <span class="form__accept-text">С условиями Премии ознакомлен(-на) и согласен(-на)</span>
+                </div>
+                <div class="form__accept-line">
+                    <input class="checkbox" type="checkbox" name="accept-2" id="" required>
+                    <div class="custom-checkbox"></div>
+                    <span class="form__accept-text">Согласен(-на) на обработку персональных данных</span>
+                </div>
+            </div>
+            <div class="form__send-block">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <button class="button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</form>
+        </main>
+        <footer class="footer">
+  <div class="footer__wrapper wrapper">
+    <div class="footer__top-block grid">
+      <div class="footer__logos">
+        <img class="footer__logo" src="img/logos/its-3.svg" alt="">
+        <img class="footer__logo" src="img/logos/its-1.svg" alt="">
+        <img class="footer__logo" src="img/logos/its-2.svg" alt="">
+      </div>
+      <p class="footer__year">© 2021—2023 Интеллектуальные транспортные системы России.
+        Все права защищены.</p>
+    </div>
+    <div class="footer__bottom-block grid">
+      <div class="footer__contacts">
+        <a class="footer__link footer__link_phone" href="tel:+74957665165">+7 (495) 766-51-65</a>
+        <a class="footer__link footer__link_mail" href="mailto:info@itsjournal.ru">info@itsjournal.ru</a>
+        <a class="footer__link footer__link_politics" href="#">Политика конфиденциальности</a>
+      </div>
+      <a href="#" class="footer__link footer__link_developer">Разработка сайта: w4e</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="./js/header.js?_v=20230814082836"></script>
+    <script src="./js/cleave.min.js?_v=20230814082836"></script>
+    <script src="./js/phoneformatter.js?_v=20230814082836"></script>
+    <script src="./js/form-presentation.js?_v=20230814082836"></script>
+    <script src="./js/form-photo.js?_v=20230814082836"></script>
+</body>
+
+</html>

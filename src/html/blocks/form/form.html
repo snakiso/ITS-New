@@ -1,0 +1,129 @@
+<form action="" method="post" class="form">
+    <div class="form__inner">
+        <h3 class="form__title">Заявка на соискание премии</h3>
+        <div class="form__main">
+            <div class="form__input-box">
+                <label class="label" for="name">Название компании-соискателя Премии <span> (юридическое
+                        название)</span></label>
+                <input class="input" type="text" id="name" name="name" required />
+            </div>
+            <div class="form__input-box">
+                <label class="label" for="site">Сайт компании-соискателя Премии</label>
+                <input class="input" type="text" id="site" name="site" />
+            </div>
+            <div class="form__input-box">
+                <label class="label" for="discription">Краткое описание компании-соискателя Премии <span> (до 350
+                        знаков)</span></label>
+                <textarea class="input input_big" name="discription" id="discription" maxlength="350"
+                    required></textarea>
+            </div>
+            <div class="form__input-box">
+                <label class="label" for="person">Контактное лицо компании-соискателя Премии <span>(ФИО,
+                        должность)</span></label>
+                <input class="input" type="text" id="person" name="person" required />
+            </div>
+            <div class="form__contact-block">
+                <span class="form__contact-block-title">Контактные данные для связи</span>
+                <div class="form__contact-block-inner">
+                    <div class="form__contact-block-inputs">
+                        <div class="form__input-box">
+                            <label class="label" for="work-tel">Рабочий телефон</label>
+                            <input class="input" type="tel" id="work-tel" name="work-tel" required />
+                        </div>
+                        <div class="form__input-box">
+                            <label class="label" for="tel">Мобильный телефон</label>
+                            <input class="input" type="text" id="tel" name="tel" data-length='11' required />
+                        </div>
+                        <div class="form__input-box">
+                            <label class="label" for="mail">Email</label>
+                            <input class="input" type="text" id="mail" name="mail" required />
+                        </div>
+                    </div>
+                    <div class="form__contact-block-checkboxes">
+                        <div class="form__checkbox-box">
+                            <input class="checkbox" type="checkbox" name="telegram" id="telegram">
+                            <div class="custom-checkbox"></div>
+                            <span>Тelegram</span>
+                        </div>
+                        <div class="form__checkbox-box">
+                            <input class="checkbox" type="checkbox" name="whatsapp" id="whatsapp">
+                            <div class="custom-checkbox"></div>
+                            <span>WhatsApp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__data-block">
+                <div class="form__presentation-block">
+                    <label class="label label_column" for="presentation">Презентация проекта по параметрам, описанным в
+                        правилах
+                        подачи заявки на
+                        участие <span>(описание сути проекта; технологическая независимость проекта; возможности
+                            масштабирования проекта; эффекты
+                            от реализации или создания проекта) (формат pdf)</span></label>
+                    <input type="file" class="form__presentation" id="presentation" name="presentation"
+                        accept="application/pdf" required />
+                    <div class="form__presentation-custom">
+                        <div class="form__presentation-custom-add">
+                            <img src="@img/plus.svg" alt="">
+                            <span>Добавить файл</span>
+                        </div>
+                        <div class="form__presentation-custom-remove">
+                            <span class="form__presentation-custom-remove-text"></span>
+                            <img class="form__presentation-custom-remove-img" src="@img/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form__input-box form__comment">
+                    <label class="label" for="comments">Комментарии к проекту<span> (ссылки на ролики, публикации,
+                            статьи и
+                            др.)</span></label>
+                    <textarea class="input input_big" name="comments" id="comments" maxlength="350"></textarea>
+                </div>
+                <div class="form__photo-block">
+                    <label class="label label_column" for="photo">Фото проекта</label>
+                    <div class="form__photo-block-inner">
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="@img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="@img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="@img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="@img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form__photo-box">
+                            <img class="form__photo-box-download" src="@img/arrow-download.svg" alt="">
+                            <input class="input-photo" type="file" name='photo' accept="image/png, image/jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__bottom">
+            <div class="form__accept-block">
+                <div class="form__accept-line">
+                    <input class="checkbox" type="checkbox" name="accept" id="" required>
+                    <div class="custom-checkbox"></div>
+                    <span class="form__accept-text">С условиями Премии ознакомлен(-на) и согласен(-на)</span>
+                </div>
+                <div class="form__accept-line">
+                    <input class="checkbox" type="checkbox" name="accept-2" id="" required>
+                    <div class="custom-checkbox"></div>
+                    <span class="form__accept-text">Согласен(-на) на обработку персональных данных</span>
+                </div>
+            </div>
+            <div class="form__send-block">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <button class="button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</form>

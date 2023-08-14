@@ -9,6 +9,7 @@
   transition: ease-in .2s;
   width: fit-content;
   display: block;
+  cursor: pointer;
 
   @include desktop {
     &:hover {
