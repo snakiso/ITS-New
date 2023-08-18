@@ -5,64 +5,15 @@
 
   @include desktop {
     &__wrapper {
-      padding: $offset-secondary $offset-main;
+      height: 90px;
       justify-content: space-between;
       align-items: center;
     }
 
-    &__nav {
-      display: flex;
-    }
+    
 
-    &__list {
-      display: flex;
-      align-items: center;
-    }
-
-    &__item {
-      position: relative;
-      margin-right: $offset-middle;
-      cursor: pointer;
-
-      &_dropdown {
-        display: flex;
-        align-items: center;
-
-        img {
-          padding: 0 8px;
-        }
-      }
-    }
-
-    &__link {
-      color: #000;
-      font-weight: 400;
-      line-height: 1.25em;
-
-      &_dropdown {
-        margin-bottom: 15px;
-      }
-    }
-
-    &__dropdown {
-      position: absolute;
-      background: #FFF;
-      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.09);
-      bottom: -105px;
-      visibility: hidden;
-      left: -8px;
-      z-index: 10;
-
-      &.active {
-        visibility: visible;
-      }
-    }
-
-    &__dropdown-inner {
-      padding: 7px 26px;
-      display: flex;
-      flex-direction: column;
-    }
+   
+  
   }
 
   @include tablet {

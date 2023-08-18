@@ -5,7 +5,7 @@
 
   &__title {
     color: $color-dark-blue;
-    font-family: $ff-lato;
+    font-family: $font-title;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -27,7 +27,7 @@
   &__contact-block-title {
     display: block;
     color: #000;
-    font-family: $ff-lato;
+    font-family: $font-title;
     font-weight: 600;
   }
 

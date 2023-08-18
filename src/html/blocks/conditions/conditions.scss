@@ -3,7 +3,7 @@
 
   &__title {
     display: block;
-    font-family: $ff-lato;
+    font-family: $font-title;
     color: $color-dark-blue;
     font-weight: 600;
     text-transform: uppercase;
@@ -21,7 +21,7 @@
 
   &__list-title {
     display: block;
-    font-family: $ff-lato;
+    font-family: $font-title;
     font-weight: 600;
     text-transform: uppercase;
     color: $color-dark-blue;

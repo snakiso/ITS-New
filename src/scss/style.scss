@@ -9,9 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+
+  &_hidden{
+    overflow: hidden;
+  }
 }
 
 ul {
@@ -91,3 +95,4 @@ a {
 @import "../scss/checkbox";
 @import "../html/blocks/form/form";
 @import "../html/blocks/own/own";
+@import "../html/blocks/nav/nav";

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="html">
 @@include('html/common/head/head.html',{
-"title": "О премии"
+"title": "Итоги-2022"
 })
 
 <body class="body">
@@ -9,11 +9,14 @@
         @@include('html/common/header/header.html',{})
         @@include('html/common/menu/menu.html',{})
         <main class="main">
-            @@include('html/blocks/quote/quote.html',{})
+            @@include('html/blocks/result/result-2022.html',{})
+            @@include('html/blocks/infinite-slider/infinite-slider.html',{})
         </main>
         @@include('html/common/footer/footer.html',{})
     </div>
+    <script src="./js/animations.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>

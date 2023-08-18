@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap&_v=20230814082836"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap&_v=20230818154911"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230814082836" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230814082836"></script>
-    <script src="js/jQuery2.2.0.js?_v=20230814082836"></script>
-    <script src="js/ScrollAnimations.js?_v=20230814082836"></script>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230814082836">
-    <title>Слайдер</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230818154911" />
+    <script src="js/swiper-bundle.min.js?_v=20230818154911"></script>
+    <script src="js/jQuery2.2.0.js?_v=20230818154911"></script>
+    <script src="js/ScrollAnimations.js?_v=20230818154911"></script>
+    <script src="js/meta.js?_v=20230818154911"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230818154911">
+    <title>Итоги-2022</title>
 </head>
 
 <body class="body">
@@ -24,27 +25,27 @@
         <div class="header__logo">
             <a href="#"><img src="img/logos/logo.png" alt=""></a>
         </div>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="header__link">О премии</a>
+        <nav class="nav nav_header">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">О премии</a>
                 </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Условия участия</a>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Условия участия</a>
                 </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Экспертный совет</a>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Экспертный совет</a>
                 </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">Контакты</a>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
                 </li>
-                <li class="header__item header__item_dropdown">
+                <li class="nav__item nav__item_dropdown">
                     Итоги
                     <img src="img/arrow-dropdown.svg" alt="">
-                    <div class="header__dropdown">
-                        <div class="header__dropdown-inner">
-                            <a class="header__link header__link_dropdown" href="#">2021</a>
-                            <a class="header__link" href="#">2022</a>
+                    <div class="nav__dropdown">
+                        <div class="nav__dropdown-inner">
+                            <a class="nav__link nav__link_dropdown" href="#">2021</a>
+                            <a class="nav__link" href="#">2022</a>
                         </div>
                     </div>
                 </li>
@@ -89,6 +90,46 @@
   </div>
 </div>
         <main class="main">
+            <div class="result">
+  <div class="result__wrapper" data-animation-container>
+    <h1 class="result__title title fade-in" data-animation-child data-duration=".6">ИТОГИ 2022</h1>
+    <h2 class="result__subtitle">Лауреаты 2-й премии журнала «ИТС России» за достижения
+      в области интеллектуальных транспортных систем
+      и цифровых технологий на транспорте</h2>
+    <span class="result__info">Москва, 2022 год</span>
+    <ul class="result__list">
+      <li class="result__item">
+        <span class="result__item-title">Концерн «Телематика»</span>
+        <p class="result__item-text">За разработку и внедрение системы безбарьерной оплаты проезда «Свободный поток»</p>
+      </li>
+      <li class="result__item">
+        <span class="result__item-title">ООО «Мегаполис ИТ»</span>
+        <p class="result__item-text">За создание и внедрение комплексных инфраструктурных технологических решений для
+          прикладных задач в области ИТС и
+          цифровых технологий на транспорте</p>
+      </li>
+      <li class="result__item">
+        <span class="result__item-title">ГУП «Московский метрополитен»</span>
+        <p class="result__item-text">За внедрение системы оплаты проезда при помощи распознавания лица Face Pay</p>
+      </li>
+      <li class="result__item">
+        <span class="result__item-title">АО «НИИ «Вектор»</span>
+        <p class="result__item-text">За разработку системы орнитологической безопасности полетов для аэропортов Orni</p>
+      </li>
+      <li class="result__item">
+        <span class="result__item-title">Сибирский государственный автомобильно-дорожный университет</span>
+        <p class="result__item-text">За разработку системы предупреждения водителей о приближении пешеходов к
+          пешеходному переходу</p>
+      </li>
+      <li class="result__item">
+        <span class="result__item-title">Михаил Яковлевич Блинкин</span>
+        <p class="result__item-text">Экспертная премия за вклад в развитие транспорта, технологий на транспорте и
+          организации транспортной среды
+          и урбанистики</p>
+      </li>
+    </ul>
+  </div>
+</div>
             <div class="infinite-slider">
   <div class="wrapper">
     <span class="infinite-slider__title">Фотогалерея</span>
@@ -144,8 +185,9 @@
   </div>
 </footer>
     </div>
-    <script src="./js/header.js?_v=20230814082836"></script>
-    <script src="./js/swiper.js?_v=20230814082836"></script>
+    <script src="./js/animations.js?_v=20230818154911"></script>
+    <script src="./js/header.js?_v=20230818154911"></script>
+    <script src="./js/swiper.js?_v=20230818154911"></script>
 </body>
 
 </html>

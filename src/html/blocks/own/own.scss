@@ -15,7 +15,7 @@
 
   &__subtitle {
     color: #000;
-    font-family: $ff-lato;
+    font-family: $font-title;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -28,7 +28,7 @@
   &__date {
     position: relative;
     color: #F39195;
-    font-family: $ff-lato;
+    font-family: $font-title;
     font-weight: 600;
 
     &::before,
@@ -41,22 +41,13 @@
   }
 
   &__year {
-    font-family: $ff-lato;
+    font-family: $font-title;
     font-weight: 600;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px rgba(179, 179, 179, 1);
   }
 
-  &__list {
-    display: flex;
-    align-items: center;
-  }
-
-  &__link {
-    font-weight: 600;
-    color: $color-dark-blue;
-  }
 
   @include desktop {
     min-height: calc(100vh - 162px);
@@ -88,12 +79,14 @@
         top: -10px;
         width: 400px;
         left: -100px;
+        transition: ease-in .4s;
       }
 
       &::after {
         bottom: -10px;
         width: 350px;
         left: -130px;
+        transition: ease-in .4s;
       }
     }
 
@@ -103,15 +96,6 @@
       line-height: 104%;
       padding-right: 90px;
     }
-
-    &__nav {
-      margin-top: $offset-middle;
-    }
-
-    &__list {
-      column-gap: $offset-middle;
-    }
-
 
   }
 
@@ -173,17 +157,5 @@
 
     }
 
-    &__nav {
-      margin-top: 50px;
-    }
-
-    &__list {
-      flex-direction: column;
-      row-gap: 20px;
-    }
-
-    &__link {
-      font-size: 14px;
-    }
   }
 }
