@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Lato;
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.ttf2") format("ttf2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  font-display: swap;
+  src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.ttf2") format("ttf2");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -141,7 +157,7 @@ a {
 }
 
 .title {
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   text-transform: uppercase;
   color: #025098;
@@ -1356,7 +1372,7 @@ a {
 }
 
 .result__subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   color: #025098;
   text-transform: uppercase;
@@ -1417,7 +1433,7 @@ a {
 
 .infinite-slider__title {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   line-height: 1.18em;
   text-transform: uppercase;
@@ -1471,11 +1487,6 @@ a {
   transform: rotate(180deg);
 }
 
-.about {
-  padding-top: 165px;
-  margin-bottom: 80px;
-}
-
 .about__main {
   background-color: rgba(223, 237, 250, 0.7);
 }
@@ -1500,11 +1511,10 @@ a {
 .about__main-year {
   color: #000;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .about__subtitle {
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   text-transform: uppercase;
   color: #025098;
@@ -1562,12 +1572,8 @@ a {
   font-weight: 400;
 }
 
-.jury {
-  margin-bottom: 100px;
-}
-
 .jury__title {
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   text-transform: uppercase;
   color: #025098;
@@ -1578,13 +1584,9 @@ a {
   font-weight: 400;
 }
 
-.conditions {
-  margin-bottom: 100px;
-}
-
 .conditions__title {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   color: #025098;
   font-weight: 600;
   text-transform: uppercase;
@@ -1602,7 +1604,7 @@ a {
 
 .conditions__list-title {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   text-transform: uppercase;
   color: #025098;
@@ -1662,7 +1664,7 @@ a {
 
 .contacts__title {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   color: #025098;
   text-transform: uppercase;
@@ -1836,7 +1838,7 @@ a {
 
 .form__title {
   color: #025098;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1858,7 +1860,7 @@ a {
 .form__contact-block-title {
   display: block;
   color: #000;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
 }
 
@@ -2049,7 +2051,7 @@ a {
 
 .own__subtitle {
   color: #000;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -2062,7 +2064,7 @@ a {
 .own__date {
   position: relative;
   color: #F39195;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
 }
 
@@ -2075,7 +2077,7 @@ a {
 }
 
 .own__year {
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   font-weight: 600;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
@@ -2228,6 +2230,11 @@ a {
     padding-left: 80px;
   }
 
+  .about {
+    padding-top: 165px;
+    margin-bottom: 80px;
+  }
+
   .about__main {
     margin-bottom: 80px;
   }
@@ -2339,6 +2346,10 @@ a {
     font-size: 13px;
   }
 
+  .jury {
+    margin-bottom: 100px;
+  }
+
   .jury__inner {
     grid-column: 10 span;
   }
@@ -2353,6 +2364,10 @@ a {
     font-size: 16px;
     line-height: 1.25em;
     margin-bottom: 30px;
+  }
+
+  .conditions {
+    margin-bottom: 100px;
   }
 
   .conditions__inner {
@@ -2899,6 +2914,11 @@ a {
     line-height: 1.28em;
   }
 
+  .about {
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+
   .about__main {
     margin-bottom: 50px;
   }
@@ -2943,7 +2963,7 @@ a {
   }
 
   .about__block {
-    grid-column: 10 span;
+    grid-column: 12 span;
   }
 
   .about__block:not(:last-child) {
@@ -3022,6 +3042,10 @@ a {
     font-size: 12px;
   }
 
+  .jury {
+    margin-bottom: 50px;
+  }
+
   .jury__inner {
     grid-column: 12 span;
   }
@@ -3036,6 +3060,10 @@ a {
     font-size: 14px;
     line-height: 1.28em;
     margin-bottom: 30px;
+  }
+
+  .conditions {
+    margin-bottom: 50px;
   }
 
   .conditions__inner {

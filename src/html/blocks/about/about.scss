@@ -1,6 +1,5 @@
 .about {
-  padding-top: 165px;
-  margin-bottom: 80px;
+
 
   &__main {
     background-color: $color-opacity-blue;
@@ -26,7 +25,6 @@
   &__main-year {
     color: #000;
     font-weight: 600;
-    text-transform: uppercase;
   }
 
   &__subtitle {
@@ -46,6 +44,9 @@
   }
 
   @include desktop {
+    padding-top: 165px;
+    margin-bottom: 80px;
+
     &__main {
       margin-bottom: 80px;
     }
@@ -103,6 +104,9 @@
   }
 
   @include non-desktop {
+    padding-top: 60px;
+    margin-bottom: 50px;
+
     &__main {
       margin-bottom: 50px;
     }
@@ -147,7 +151,7 @@
     }
 
     &__block {
-      grid-column: 10 span;
+      grid-column: 12 span;
 
       &:not(:last-child) {
         margin-bottom: $offset-main;

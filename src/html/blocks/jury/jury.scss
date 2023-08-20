@@ -1,5 +1,5 @@
 .jury {
-  margin-bottom: $offset-bigest;
+
 
   &__title {
     font-family: $font-title;
@@ -14,6 +14,9 @@
   }
 
   @include desktop {
+
+    margin-bottom: $offset-bigest;
+
     &__inner {
       grid-column: 10 span;
     }
@@ -32,6 +35,8 @@
   }
 
   @include non-desktop {
+    margin-bottom: 50px;
+
     &__inner {
       grid-column: 12 span;
     }

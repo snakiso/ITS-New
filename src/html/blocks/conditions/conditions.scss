@@ -1,5 +1,5 @@
 .conditions {
-  margin-bottom: 100px;
+
 
   &__title {
     display: block;
@@ -76,6 +76,8 @@
   }
 
   @include desktop {
+    margin-bottom: 100px;
+
     &__inner {
       grid-column: 10 span;
     }
@@ -104,6 +106,8 @@
   }
 
   @include non-desktop {
+    margin-bottom: 50px;
+
     &__inner {
       grid-column: 12 span;
     }
