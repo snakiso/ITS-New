@@ -14,7 +14,6 @@
 
   @include desktop {
 
-    column-gap: $offset-middle;
     align-items: center;
     height: 100%;
 
@@ -35,7 +34,7 @@
     }
 
     &__list {
-      column-gap: $offset-middle;
+      margin-right: 40px;
       display: flex;
       align-items: center;
       height: 100%;
@@ -47,6 +46,10 @@
       height: 100%;
       display: flex;
       align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
 
       &_dropdown {
         display: flex;
@@ -101,7 +104,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    row-gap: 20px;
 
     &_header {
       display: none;
@@ -109,7 +111,13 @@
 
     &__list {
       flex-direction: column;
-      row-gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
 
     &__link {

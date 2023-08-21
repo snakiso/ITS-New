@@ -74,19 +74,17 @@
     margin-top: 80px;
     margin-bottom: $offset-bigest;
 
-    &__wrapper {
-      row-gap: $offset-middle;
-    }
-
     &__title {
       padding: 0 calc($grid-gutter + $grid-col);
       padding-top: $offset-middle;
+      margin-bottom: $offset-middle;
     }
 
     &__subtitle {
       font-size: 28px;
       line-height: 1.14em;
       padding: 0 calc($grid-gutter + $grid-col);
+      margin-bottom: $offset-middle;
     }
 
     &__info {
@@ -104,8 +102,14 @@
 
     &__list {
       padding: 0 calc($grid-gutter + $grid-col);
-      row-gap: $offset-main;
       padding-bottom: $offset-middle;
+      margin-top: $offset-middle;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
 
     &__item-title {
@@ -134,21 +138,28 @@
 
     &__wrapper {
       padding: 0 15px;
-      row-gap: $offset-main;
     }
 
     &__title {
       padding-top: $offset-main;
+      margin-bottom: 30px;
     }
 
     &__subtitle {
       font-size: 22px;
       line-height: 1.18em;
+      margin-bottom: 30px;
     }
 
     &__list {
-      row-gap: $offset-main;
       padding-bottom: $offset-main;
+      margin-top: 30px;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
 
     &__item-title {
@@ -161,6 +172,7 @@
         height: 10px;
       }
     }
+
 
     &__item-text {
       font-size: 14px;

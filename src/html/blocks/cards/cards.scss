@@ -46,11 +46,41 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: calc($grid-col + $grid-gutter);
-    row-gap: 50px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
     margin-top: $offset-middle;
+  }
+
+
+
+  @include desktop {
+    &__item {
+      margin-bottom: 50px;
+      grid-column: 3 span;
+    }
+  }
+
+  @include tablet {
+    &__list {
+      justify-items: center;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+      grid-column: 6 span;
+    }
+  }
+
+  @include mobile {
+    &__list {
+      justify-items: center;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+      grid-column: 12 span;
+    }
   }
 
   @include non-desktop {

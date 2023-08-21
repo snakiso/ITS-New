@@ -26,9 +26,11 @@
     position: relative;
     display: flex;
     margin-top: $offset-main;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 60px;
+    width: 90px;
 
     &::after {
       position: absolute;

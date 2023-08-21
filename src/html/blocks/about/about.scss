@@ -60,7 +60,7 @@
       grid-column: 7 span;
       display: flex;
       flex-direction: column;
-      row-gap: $offset-middle;
+
     }
 
     &__title {
@@ -100,6 +100,11 @@
     &__text {
       font-size: 16px;
       line-height: 1.25em;
+      margin-top: $offset-middle;
+
+      &_no-margin {
+        margin: 0;
+      }
     }
   }
 
@@ -116,19 +121,17 @@
       position: relative;
       padding: 45px 15px 0 15px;
       flex-direction: column;
-      row-gap: $offset-main;
       align-items: center;
     }
 
     &__main-content {
       display: flex;
       flex-direction: column;
-      row-gap: 15px;
+
     }
 
     &__main-top {
       flex-direction: column;
-      row-gap: 15px;
     }
 
     &__title {
@@ -143,6 +146,7 @@
     &__main-emblem {
       position: relative;
       grid-column: 4 span;
+      margin-top: 30px;
     }
 
     &__main-emblem-img {
@@ -167,6 +171,7 @@
     &__text {
       font-size: 14px;
       line-height: 1.28em;
+      margin-top: 15px;
     }
   }
 }

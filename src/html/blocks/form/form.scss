@@ -40,13 +40,11 @@
   &__contact-block-checkboxes {
     position: relative;
     display: flex;
-    row-gap: 30px;
     flex-direction: column;
   }
 
   &__checkbox-box {
     display: flex;
-    column-gap: 8px;
     align-items: center;
   }
 
@@ -76,11 +74,22 @@
     justify-content: center;
   }
 
-  &__presentation-custom-add,
+  &__presentation-custom-add {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
   &__presentation-custom-remove {
     display: flex;
     align-items: center;
-    column-gap: 8px;
+
+    img {
+      margin-left: 8px;
+    }
   }
 
   &__presentation-custom-remove {
@@ -179,7 +188,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    column-gap: 8px;
   }
 
   &__accept-text {
@@ -212,11 +220,10 @@
     &__main {
       margin-top: $offset-middle;
       margin-bottom: $offset-big;
-      row-gap: 30px;
     }
 
     &__input-box {
-      row-gap: 15px;
+      margin-bottom: 30px;
     }
 
     &__contact-block-title {
@@ -227,16 +234,25 @@
 
     &__contact-block-inner {
       display: flex;
-      column-gap: 100px;
     }
 
     &__contact-block-inputs {
       max-width: 510px;
-      row-gap: 30px;
     }
 
     &__contact-block-checkboxes {
       padding-top: 35px;
+      margin-left: 100px;
+    }
+
+    &__presentation-block {
+      margin-bottom: 30px;
+    }
+
+    &__checkbox-box {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     &__photo-block-inner {
@@ -258,8 +274,10 @@
       align-items: center;
     }
 
-    &__accept-block {
-      row-gap: $offset-secondary;
+    &__accept-line {
+      &:not(:last-child) {
+        margin-bottom: $offset-secondary;
+      }
     }
 
     &__accept-text {
@@ -268,12 +286,11 @@
     }
 
     &__send-block {
-      column-gap: $offset-main;
       align-items: center;
     }
 
-    &__data-block {
-      row-gap: $offset-main;
+    &__button {
+      margin-left: $offset-main;
     }
   }
 
@@ -294,11 +311,10 @@
     &__main {
       margin-top: $offset-main;
       margin-bottom: $offset-main;
-      row-gap: $offset-secondary;
     }
 
     &__input-box {
-      row-gap: 12px;
+      margin-bottom: 20px;
     }
 
     &__contact-block-title {
@@ -307,8 +323,10 @@
       line-height: 1.28em;
     }
 
-    &__data-block {
-      row-gap: $offset-secondary;
+    &__checkbox-box {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     &__photo-block {
@@ -326,19 +344,16 @@
     &__contact-block-inner {
       display: flex;
       flex-direction: column;
-      row-gap: $offset-secondary;
     }
 
     &__contact-block-inputs {
       max-width: 100%;
-      row-gap: 20px;
     }
 
     &__photo-block-inner {
       justify-content: space-between;
       flex-wrap: wrap;
-      column-gap: 10px;
-      row-gap: 10px;
+      ;
       margin-top: 15px;
     }
 
@@ -346,6 +361,7 @@
       min-width: 160px;
       max-width: 160px;
       min-height: 115px;
+      margin-bottom: 20px;
     }
 
     &__photo-box-download {
@@ -355,11 +371,10 @@
     &__bottom {
       flex-direction: column;
       align-items: center;
-      row-gap: $offset-secondary;
     }
 
-    &__accept-block {
-      row-gap: $offset-secondary;
+    &__accept-line {
+      margin-bottom: 15px;
     }
 
     &__accept-text {
@@ -369,8 +384,11 @@
 
     &__send-block {
       flex-direction: column;
-      row-gap: $offset-secondary;
       align-items: center;
+    }
+
+    &__button {
+      margin-top: 15px
     }
   }
 

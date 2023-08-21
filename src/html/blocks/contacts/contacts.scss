@@ -13,12 +13,12 @@
     display: block;
     color: #000;
     font-weight: 600;
+    margin-bottom: 15px;
   }
 
   &__box {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
 
     &_margin {
       margin-bottom: $offset-middle;
@@ -87,6 +87,10 @@
       font-size: 16px;
       line-height: 1.25em;
 
+      &:not(:last-child) {
+        margin-right: $offset-main;
+      }
+
       &_phone::before {
         width: 20px;
         height: 20px;
@@ -99,9 +103,16 @@
       }
     }
 
-    &__line {
-      column-gap: $offset-main;
+    &__box {
+      .contacts__link:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
+
+    &__img {
+      margin-right: 30px;
+    }
+
   }
 
   @include non-desktop {
@@ -139,6 +150,10 @@
       font-size: 14px;
       line-height: 1.28em;
 
+      &:not(:last-child) {
+        margin-right: $offset-main;
+      }
+
       &_phone::before {
         width: 17px;
         height: 17px;
@@ -151,8 +166,14 @@
       }
     }
 
-    &__line {
-      column-gap: 10px;
+    &__box {
+      .contacts__link:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__img {
+      margin-right: 15px;
     }
   }
 
@@ -160,8 +181,11 @@
     &__line {
       &_column {
         flex-direction: column;
-        row-gap: 15px;
       }
+    }
+
+    &__link {
+      margin-bottom: 15px;
     }
   }
 }

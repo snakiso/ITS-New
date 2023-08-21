@@ -8,8 +8,6 @@
 
   &__logos {
     display: flex;
-    column-gap: $offset-big;
-    row-gap: $offset-secondary;
     flex-wrap: wrap;
   }
 
@@ -57,7 +55,6 @@
 
   &__contacts {
     display: flex;
-    column-gap: $offset-middle;
   }
 
   @include desktop {
@@ -67,15 +64,19 @@
 
     &__contacts {
       display: flex;
-      column-gap: $offset-middle;
       grid-column: 7 span;
     }
 
 
     &__logos {
       display: flex;
-      column-gap: $offset-big;
       grid-column: 7 span;
+    }
+
+    &__logo {
+      &:not(:last-child) {
+        margin-right: $offset-big;
+      }
     }
 
     &__year {
@@ -86,30 +87,51 @@
     }
 
     &__link {
+      &:not(:last-child) {
+        margin-right: $offset-middle;
+      }
+
       &_developer {
         grid-column: 10/3 span;
       }
     }
   }
 
+  @include tablet {
+    &__logo {
+      &:not(:last-child) {
+        margin-right: $offset-big;
+      }
+    }
+  }
+
+
+  @include mobile {
+    &__logos {
+      display: grid;
+      row-gap: 20px;
+      column-gap: 20px;
+      justify-items: center;
+    }
+
+  }
 
   @include non-desktop {
     &__top-block {
       display: flex;
       flex-direction: column;
       align-items: center;
-      row-gap: 15px;
       margin-bottom: $offset-secondary;
+    }
+
+    &__logos {
+      margin-bottom: 15px;
     }
 
     &__bottom-block {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    &__logos {
-      justify-content: center;
     }
 
     &__contacts {
@@ -138,6 +160,5 @@
       }
     }
   }
-
 
 }
