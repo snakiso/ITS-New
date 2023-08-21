@@ -3154,10 +3154,6 @@ a {
     margin-bottom: 30px;
   }
 
-  .contacts__content {
-    row-gap: 30px;
-  }
-
   .contacts__left-block {
     grid-column: 12 span;
   }
@@ -3190,7 +3186,7 @@ a {
     top: 2px;
   }
 
-  .contacts__box .contacts__link:not(:last-child) {
+  .contacts__box .contacts__link {
     margin-bottom: 15px;
   }
 

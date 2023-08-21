@@ -130,10 +130,6 @@
       margin-bottom: $offset-main;
     }
 
-    &__content {
-      row-gap: $offset-main;
-    }
-
     &__left-block {
       grid-column: 12 span;
     }
@@ -167,7 +163,7 @@
     }
 
     &__box {
-      .contacts__link:not(:last-child) {
+      .contacts__link {
         margin-bottom: 15px;
       }
     }
